@@ -81,7 +81,6 @@ class SIAUDPServer(BaseSIAServer):
                     event,
                     exp,
                 )
-            Domoticz.Debug("Sent response.")
             # check for event and if the response is acknowledge, which means the event is valid.
             if event and response == resp.ACK:
                 self.counts["valid_events"] = (
